@@ -1,0 +1,5 @@
+machine services login manager password daddeldu
+machine localhost login manager password daddeldu
+machine vm-ip login manager password daddeldu
+machine informatik.hs-bremerhaven.de login manager password passwordin.my.cnf
+

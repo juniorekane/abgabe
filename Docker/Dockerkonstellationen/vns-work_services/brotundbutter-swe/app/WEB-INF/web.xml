@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  version="6.0">
+
+<display-name>SWE 3 Demo App</display-name>
+
+<listener>
+  <listener-class>hbv.web.MyContextListener</listener-class>
+</listener>
+
+<servlet-mapping>
+  <servlet-name>helloServlet</servlet-name>
+  <url-pattern>/hello</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>helloServlet</servlet-name>
+  <servlet-class>hbv.web.HelloServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>redisServlet</servlet-name>
+  <url-pattern>/redis</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>redisServlet</servlet-name>
+  <servlet-class>hbv.web.RedisServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>sqlServlet</servlet-name>
+  <url-pattern>/sql</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>sqlServlet</servlet-name>
+  <servlet-class>hbv.web.SQLServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>testServlet</servlet-name>
+  <url-pattern>/test</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>testServlet</servlet-name>
+  <servlet-class>hbv.web.TestServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>jsonServlet</servlet-name>
+  <url-pattern>/json</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>jsonServlet</servlet-name>
+  <servlet-class>hbv.web.JSONServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>createImageServlet</servlet-name>
+  <url-pattern>/createimage</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>createImageServlet</servlet-name>
+  <servlet-class>hbv.web.CreateImageServlet</servlet-class>
+</servlet>  
+
+<servlet-mapping>
+  <servlet-name>getImageServlet</servlet-name>
+  <url-pattern>/getimage</url-pattern>
+</servlet-mapping>	
+<servlet>  
+  <servlet-name>getImageServlet</servlet-name>
+  <servlet-class>hbv.web.GetImageServlet</servlet-class>
+</servlet>  
+
+<servlet>
+  <servlet-name>uploadImageServlet</servlet-name>
+  <servlet-class>hbv.web.UploadImageServlet</servlet-class>
+  <multipart-config>
+    <max-file-size>10485760</max-file-size>
+    <max-request-size>20971520</max-request-size>
+  </multipart-config>
+</servlet>
+<servlet-mapping>
+  <servlet-name>uploadImageServlet</servlet-name>
+  <url-pattern>/uploadimage</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>loginServlet</servlet-name>
+  <servlet-class>hbv.web.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>loginServlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>logoutServlet</servlet-name>
+  <servlet-class>hbv.web.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>logoutServlet</servlet-name>
+  <url-pattern>/logout</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>protectedServlet</servlet-name>
+  <servlet-class>hbv.web.ProtectedServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>protectedServlet</servlet-name>
+  <url-pattern>/protected</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>qrCodeServlet</servlet-name>
+  <servlet-class>hbv.web.QRCodeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>qrCodeServlet</servlet-name>
+  <url-pattern>/qrcode</url-pattern>
+</servlet-mapping>
+
+
+<filter> 
+  <filter-name>myfilter</filter-name>
+  <filter-class>hbv.web.MyFilter</filter-class> 
+  <async-supported>true</async-supported> 
+</filter> 
+
+<filter-mapping> 
+  <filter-name>myfilter</filter-name>
+  <url-pattern>/*</url-pattern> 
+</filter-mapping> 
+
+</web-app>  

@@ -1,0 +1,4 @@
+user=oradfelder
+webapp=
+manager=manager
+baseurl=http://tomcat:8080
