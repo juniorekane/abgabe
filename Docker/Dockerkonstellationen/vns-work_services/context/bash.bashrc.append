@@ -1,0 +1,9 @@
+redis-cli(){
+  export REDISCLI_AUTH=$(grep '^password' ~/.my.cnf|head -n1 |(read pw; echo ${pw#*=}))
+  if [ "$REDISCLI_AUTH" = "" ] ; then
+    echo "Ihre .my.cnf Datei ist nicht korrekt" >&2
+    exit 1
+  fi
+  command stdbuf -oL redis-cli -h services "$@"
+}
+export -f redis-cli

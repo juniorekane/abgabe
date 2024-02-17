@@ -1,0 +1,4 @@
+user=oradfelder
+webapp=
+manager=manager
+baseurl=http://services:8080
