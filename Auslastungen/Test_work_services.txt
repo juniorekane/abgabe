@@ -1,0 +1,181 @@
+Sa 17. Feb 12:46:38 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   525.76%   942.9MiB / 7.743GiB   11.89%
+Sa 17. Feb 12:46:42 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   477.19%   913.5MiB / 7.743GiB   11.52%
+Sa 17. Feb 12:46:45 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   466.10%   880.8MiB / 7.743GiB   11.11%
+Sa 17. Feb 12:46:49 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   486.79%   884.5MiB / 7.743GiB   11.15%
+Sa 17. Feb 12:46:52 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   464.67%   860.8MiB / 7.743GiB   10.86%
+Sa 17. Feb 12:46:56 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   339.21%   877.6MiB / 7.743GiB   11.07%
+Sa 17. Feb 12:46:59 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   477.21%   911.5MiB / 7.743GiB   11.50%
+Sa 17. Feb 12:47:03 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   490.73%   867.1MiB / 7.743GiB   10.94%
+Sa 17. Feb 12:47:07 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.86MiB / 7.743GiB   0.14%
+services   490.08%   822MiB / 7.743GiB     10.37%
+Sa 17. Feb 12:47:10 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   453.32%   908.3MiB / 7.743GiB   11.46%
+Sa 17. Feb 12:47:14 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   470.54%   909.8MiB / 7.743GiB   11.47%
+Sa 17. Feb 12:47:17 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   465.71%   927.6MiB / 7.743GiB   11.70%
+Sa 17. Feb 12:47:20 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   447.82%   928.1MiB / 7.743GiB   11.70%
+Sa 17. Feb 12:47:23 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   478.40%   934.8MiB / 7.743GiB   11.79%
+Sa 17. Feb 12:47:26 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   486.70%   941.6MiB / 7.743GiB   11.87%
+Sa 17. Feb 12:47:29 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   479.69%   938.7MiB / 7.743GiB   11.84%
+Sa 17. Feb 12:47:32 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   447.51%   944.3MiB / 7.743GiB   11.91%
+Sa 17. Feb 12:47:35 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   489.30%   947.1MiB / 7.743GiB   11.94%
+Sa 17. Feb 12:47:38 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   467.41%   954.2MiB / 7.743GiB   12.03%
+Sa 17. Feb 12:47:41 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   383.69%   954.6MiB / 7.743GiB   12.04%
+Sa 17. Feb 12:47:44 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   469.36%   955.9MiB / 7.743GiB   12.06%
+Sa 17. Feb 12:47:47 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   466.83%   966.1MiB / 7.743GiB   12.18%
+Sa 17. Feb 12:47:50 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   458.77%   1014MiB / 7.743GiB    12.79%
+Sa 17. Feb 12:47:53 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   459.98%   1020MiB / 7.743GiB    12.87%
+Sa 17. Feb 12:47:56 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   484.73%   1.001GiB / 7.743GiB   12.93%
+Sa 17. Feb 12:47:59 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   477.99%   1.001GiB / 7.743GiB   12.92%
+Sa 17. Feb 12:48:02 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   472.77%   1.009GiB / 7.743GiB   13.04%
+Sa 17. Feb 12:48:05 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   468.86%   1.009GiB / 7.743GiB   13.03%
+Sa 17. Feb 12:48:08 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   482.55%   1.01GiB / 7.743GiB    13.04%
+Sa 17. Feb 12:48:11 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   469.60%   1.013GiB / 7.743GiB   13.08%
+Sa 17. Feb 12:48:14 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   5.16%     1.006GiB / 7.743GiB   13.00%
+Sa 17. Feb 12:48:17 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   0.93%     1.006GiB / 7.743GiB   13.00%
+Sa 17. Feb 12:48:20 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   1.70%     1.006GiB / 7.743GiB   13.00%
+Sa 17. Feb 12:48:23 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   0.86%     1.006GiB / 7.743GiB   13.00%
+Sa 17. Feb 12:48:26 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   1.16%     1018MiB / 7.743GiB    12.84%
+Sa 17. Feb 12:48:29 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   4.93%     1018MiB / 7.743GiB    12.84%
+Sa 17. Feb 12:48:32 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   1.47%     1018MiB / 7.743GiB    12.84%
+Sa 17. Feb 12:48:36 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   6.89%     1020MiB / 7.743GiB    12.86%
+Sa 17. Feb 12:48:39 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     10.87MiB / 7.743GiB   0.14%
+services   5.43%     1019MiB / 7.743GiB    12.85%
+Sa 17. Feb 12:48:42 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.19%     10.87MiB / 7.743GiB   0.14%
+services   1.00%     1019MiB / 7.743GiB    12.85%
+Sa 17. Feb 12:48:45 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.13%     13.19MiB / 7.743GiB   0.17%
+services   1.34%     1019MiB / 7.743GiB    12.86%
+Sa 17. Feb 12:48:48 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.09%     13.19MiB / 7.743GiB   0.17%
+services   1.12%     1019MiB / 7.743GiB    12.86%
+Sa 17. Feb 12:48:51 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.10%     13.19MiB / 7.743GiB   0.17%
+services   1.08%     1019MiB / 7.743GiB    12.86%
+Sa 17. Feb 12:48:54 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       58.31%    14.23MiB / 7.743GiB   0.18%
+services   0.77%     1019MiB / 7.743GiB    12.86%
+Sa 17. Feb 12:48:57 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.49%     11.19MiB / 7.743GiB   0.14%
+services   1.05%     1019MiB / 7.743GiB    12.86%
+Sa 17. Feb 12:49:00 CET 2024

@@ -1,0 +1,320 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+     execution: local
+        script: script.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 10m30s max duration (incl. graceful stop):
+              * default: 600000 iterations shared among 1000 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+
+running (00m01.0s), 1000/1000 VUs, 1832 complete and 0 interrupted iterations
+default   [   0% ] 1000 VUs  00m01.0s/10m0s  001832/600000 shared iters
+
+running (00m02.0s), 1000/1000 VUs, 5085 complete and 0 interrupted iterations
+default   [   1% ] 1000 VUs  00m02.0s/10m0s  005085/600000 shared iters
+
+running (00m03.0s), 1000/1000 VUs, 9148 complete and 0 interrupted iterations
+default   [   2% ] 1000 VUs  00m03.0s/10m0s  009148/600000 shared iters
+
+running (00m04.0s), 1000/1000 VUs, 14248 complete and 0 interrupted iterations
+default   [   2% ] 1000 VUs  00m04.0s/10m0s  014248/600000 shared iters
+
+running (00m05.0s), 1000/1000 VUs, 20588 complete and 0 interrupted iterations
+default   [   3% ] 1000 VUs  00m05.0s/10m0s  020588/600000 shared iters
+
+running (00m06.0s), 1000/1000 VUs, 26612 complete and 0 interrupted iterations
+default   [   4% ] 1000 VUs  00m06.0s/10m0s  026613/600000 shared iters
+
+running (00m07.0s), 1000/1000 VUs, 32835 complete and 0 interrupted iterations
+default   [   5% ] 1000 VUs  00m07.0s/10m0s  032836/600000 shared iters
+
+running (00m08.0s), 1000/1000 VUs, 37522 complete and 0 interrupted iterations
+default   [   6% ] 1000 VUs  00m08.0s/10m0s  037522/600000 shared iters
+
+running (00m09.0s), 1000/1000 VUs, 43547 complete and 0 interrupted iterations
+default   [   7% ] 1000 VUs  00m09.0s/10m0s  043547/600000 shared iters
+
+running (00m10.0s), 1000/1000 VUs, 50388 complete and 0 interrupted iterations
+default   [   8% ] 1000 VUs  00m10.0s/10m0s  050388/600000 shared iters
+
+running (00m11.0s), 1000/1000 VUs, 56565 complete and 0 interrupted iterations
+default   [   9% ] 1000 VUs  00m11.0s/10m0s  056565/600000 shared iters
+
+running (00m12.0s), 1000/1000 VUs, 62681 complete and 0 interrupted iterations
+default   [  10% ] 1000 VUs  00m12.0s/10m0s  062682/600000 shared iters
+
+running (00m13.0s), 1000/1000 VUs, 68287 complete and 0 interrupted iterations
+default   [  11% ] 1000 VUs  00m13.0s/10m0s  068287/600000 shared iters
+
+running (00m14.0s), 1000/1000 VUs, 73383 complete and 0 interrupted iterations
+default   [  12% ] 1000 VUs  00m14.0s/10m0s  073383/600000 shared iters
+
+running (00m15.0s), 1000/1000 VUs, 78854 complete and 0 interrupted iterations
+default   [  13% ] 1000 VUs  00m15.0s/10m0s  078854/600000 shared iters
+
+running (00m16.0s), 1000/1000 VUs, 84409 complete and 0 interrupted iterations
+default   [  14% ] 1000 VUs  00m16.0s/10m0s  084409/600000 shared iters
+
+running (00m17.0s), 1000/1000 VUs, 90741 complete and 0 interrupted iterations
+default   [  15% ] 1000 VUs  00m17.0s/10m0s  090741/600000 shared iters
+
+running (00m18.0s), 1000/1000 VUs, 96453 complete and 0 interrupted iterations
+default   [  16% ] 1000 VUs  00m18.0s/10m0s  096453/600000 shared iters
+
+running (00m19.0s), 1000/1000 VUs, 101711 complete and 0 interrupted iterations
+default   [  17% ] 1000 VUs  00m19.0s/10m0s  101711/600000 shared iters
+
+running (00m20.0s), 1000/1000 VUs, 107615 complete and 0 interrupted iterations
+default   [  18% ] 1000 VUs  00m20.0s/10m0s  107616/600000 shared iters
+
+running (00m21.0s), 1000/1000 VUs, 112591 complete and 0 interrupted iterations
+default   [  19% ] 1000 VUs  00m21.0s/10m0s  112600/600000 shared iters
+
+running (00m22.0s), 1000/1000 VUs, 118049 complete and 0 interrupted iterations
+default   [  20% ] 1000 VUs  00m22.0s/10m0s  118049/600000 shared iters
+
+running (00m23.0s), 1000/1000 VUs, 123525 complete and 0 interrupted iterations
+default   [  21% ] 1000 VUs  00m23.0s/10m0s  123525/600000 shared iters
+
+running (00m24.0s), 1000/1000 VUs, 126998 complete and 0 interrupted iterations
+default   [  21% ] 1000 VUs  00m24.0s/10m0s  126998/600000 shared iters
+
+running (00m25.0s), 1000/1000 VUs, 132863 complete and 0 interrupted iterations
+default   [  22% ] 1000 VUs  00m25.0s/10m0s  132863/600000 shared iters
+
+running (00m26.0s), 1000/1000 VUs, 139451 complete and 0 interrupted iterations
+default   [  23% ] 1000 VUs  00m26.0s/10m0s  139451/600000 shared iters
+
+running (00m27.0s), 1000/1000 VUs, 144894 complete and 0 interrupted iterations
+default   [  24% ] 1000 VUs  00m27.0s/10m0s  144894/600000 shared iters
+
+running (00m28.0s), 1000/1000 VUs, 150744 complete and 0 interrupted iterations
+default   [  25% ] 1000 VUs  00m28.0s/10m0s  150744/600000 shared iters
+
+running (00m29.0s), 1000/1000 VUs, 155705 complete and 0 interrupted iterations
+default   [  26% ] 1000 VUs  00m29.0s/10m0s  155705/600000 shared iters
+
+running (00m30.0s), 1000/1000 VUs, 161527 complete and 0 interrupted iterations
+default   [  27% ] 1000 VUs  00m30.0s/10m0s  161527/600000 shared iters
+
+running (00m31.0s), 1000/1000 VUs, 166747 complete and 0 interrupted iterations
+default   [  28% ] 1000 VUs  00m31.0s/10m0s  166747/600000 shared iters
+
+running (00m32.0s), 1000/1000 VUs, 171984 complete and 0 interrupted iterations
+default   [  29% ] 1000 VUs  00m32.0s/10m0s  171984/600000 shared iters
+
+running (00m33.0s), 1000/1000 VUs, 177351 complete and 0 interrupted iterations
+default   [  30% ] 1000 VUs  00m33.0s/10m0s  177351/600000 shared iters
+
+running (00m34.0s), 1000/1000 VUs, 183524 complete and 0 interrupted iterations
+default   [  31% ] 1000 VUs  00m34.0s/10m0s  183524/600000 shared iters
+
+running (00m35.0s), 1000/1000 VUs, 188245 complete and 0 interrupted iterations
+default   [  31% ] 1000 VUs  00m35.0s/10m0s  188245/600000 shared iters
+
+running (00m36.0s), 1000/1000 VUs, 193617 complete and 0 interrupted iterations
+default   [  32% ] 1000 VUs  00m36.0s/10m0s  193617/600000 shared iters
+
+running (00m37.0s), 1000/1000 VUs, 199301 complete and 0 interrupted iterations
+default   [  33% ] 1000 VUs  00m37.0s/10m0s  199301/600000 shared iters
+
+running (00m38.0s), 1000/1000 VUs, 205360 complete and 0 interrupted iterations
+default   [  34% ] 1000 VUs  00m38.0s/10m0s  205360/600000 shared iters
+
+running (00m39.0s), 1000/1000 VUs, 213341 complete and 0 interrupted iterations
+default   [  36% ] 1000 VUs  00m39.0s/10m0s  213341/600000 shared iters
+
+running (00m40.0s), 1000/1000 VUs, 219632 complete and 0 interrupted iterations
+default   [  37% ] 1000 VUs  00m40.0s/10m0s  219632/600000 shared iters
+
+running (00m41.0s), 1000/1000 VUs, 226847 complete and 0 interrupted iterations
+default   [  38% ] 1000 VUs  00m41.0s/10m0s  226847/600000 shared iters
+
+running (00m42.0s), 1000/1000 VUs, 233610 complete and 0 interrupted iterations
+default   [  39% ] 1000 VUs  00m42.0s/10m0s  233610/600000 shared iters
+
+running (00m43.0s), 1000/1000 VUs, 240134 complete and 0 interrupted iterations
+default   [  40% ] 1000 VUs  00m43.0s/10m0s  240134/600000 shared iters
+
+running (00m44.0s), 1000/1000 VUs, 247217 complete and 0 interrupted iterations
+default   [  41% ] 1000 VUs  00m44.0s/10m0s  247217/600000 shared iters
+
+running (00m45.0s), 1000/1000 VUs, 252358 complete and 0 interrupted iterations
+default   [  42% ] 1000 VUs  00m45.0s/10m0s  252359/600000 shared iters
+
+running (00m46.0s), 1000/1000 VUs, 259390 complete and 0 interrupted iterations
+default   [  43% ] 1000 VUs  00m46.0s/10m0s  259390/600000 shared iters
+
+running (00m47.0s), 1000/1000 VUs, 265383 complete and 0 interrupted iterations
+default   [  44% ] 1000 VUs  00m47.0s/10m0s  265383/600000 shared iters
+
+running (00m48.0s), 1000/1000 VUs, 272010 complete and 0 interrupted iterations
+default   [  45% ] 1000 VUs  00m48.0s/10m0s  272010/600000 shared iters
+
+running (00m49.0s), 1000/1000 VUs, 279946 complete and 0 interrupted iterations
+default   [  47% ] 1000 VUs  00m49.0s/10m0s  279946/600000 shared iters
+
+running (00m50.0s), 1000/1000 VUs, 287486 complete and 0 interrupted iterations
+default   [  48% ] 1000 VUs  00m50.0s/10m0s  287487/600000 shared iters
+
+running (00m51.0s), 1000/1000 VUs, 294630 complete and 0 interrupted iterations
+default   [  49% ] 1000 VUs  00m51.0s/10m0s  294630/600000 shared iters
+
+running (00m52.0s), 1000/1000 VUs, 302834 complete and 0 interrupted iterations
+default   [  50% ] 1000 VUs  00m52.0s/10m0s  302834/600000 shared iters
+
+running (00m53.0s), 1000/1000 VUs, 310852 complete and 0 interrupted iterations
+default   [  52% ] 1000 VUs  00m53.0s/10m0s  310853/600000 shared iters
+
+running (00m54.0s), 1000/1000 VUs, 317729 complete and 0 interrupted iterations
+default   [  53% ] 1000 VUs  00m54.0s/10m0s  317729/600000 shared iters
+
+running (00m55.0s), 1000/1000 VUs, 324369 complete and 0 interrupted iterations
+default   [  54% ] 1000 VUs  00m55.0s/10m0s  324369/600000 shared iters
+
+running (00m56.0s), 1000/1000 VUs, 330903 complete and 0 interrupted iterations
+default   [  55% ] 1000 VUs  00m56.0s/10m0s  330903/600000 shared iters
+
+running (00m57.0s), 1000/1000 VUs, 338671 complete and 0 interrupted iterations
+default   [  56% ] 1000 VUs  00m57.0s/10m0s  338671/600000 shared iters
+
+running (00m58.0s), 1000/1000 VUs, 345367 complete and 0 interrupted iterations
+default   [  58% ] 1000 VUs  00m58.0s/10m0s  345367/600000 shared iters
+
+running (00m59.0s), 1000/1000 VUs, 352225 complete and 0 interrupted iterations
+default   [  59% ] 1000 VUs  00m59.0s/10m0s  352225/600000 shared iters
+
+running (01m00.0s), 1000/1000 VUs, 359339 complete and 0 interrupted iterations
+default   [  60% ] 1000 VUs  01m00.0s/10m0s  359339/600000 shared iters
+
+running (01m01.0s), 1000/1000 VUs, 366256 complete and 0 interrupted iterations
+default   [  61% ] 1000 VUs  01m01.0s/10m0s  366256/600000 shared iters
+
+running (01m02.0s), 1000/1000 VUs, 373689 complete and 0 interrupted iterations
+default   [  62% ] 1000 VUs  01m02.0s/10m0s  373689/600000 shared iters
+
+running (01m03.0s), 1000/1000 VUs, 378467 complete and 0 interrupted iterations
+default   [  63% ] 1000 VUs  01m03.0s/10m0s  378467/600000 shared iters
+
+running (01m04.0s), 1000/1000 VUs, 384827 complete and 0 interrupted iterations
+default   [  64% ] 1000 VUs  01m04.0s/10m0s  384827/600000 shared iters
+
+running (01m05.0s), 1000/1000 VUs, 391164 complete and 0 interrupted iterations
+default   [  65% ] 1000 VUs  01m05.0s/10m0s  391164/600000 shared iters
+
+running (01m06.0s), 1000/1000 VUs, 397266 complete and 0 interrupted iterations
+default   [  66% ] 1000 VUs  01m06.0s/10m0s  397266/600000 shared iters
+
+running (01m07.0s), 1000/1000 VUs, 403983 complete and 0 interrupted iterations
+default   [  67% ] 1000 VUs  01m07.0s/10m0s  403983/600000 shared iters
+
+running (01m08.0s), 1000/1000 VUs, 412102 complete and 0 interrupted iterations
+default   [  69% ] 1000 VUs  01m08.0s/10m0s  412102/600000 shared iters
+
+running (01m09.0s), 1000/1000 VUs, 420189 complete and 0 interrupted iterations
+default   [  70% ] 1000 VUs  01m09.0s/10m0s  420189/600000 shared iters
+
+running (01m10.0s), 1000/1000 VUs, 427398 complete and 0 interrupted iterations
+default   [  71% ] 1000 VUs  01m10.0s/10m0s  427398/600000 shared iters
+
+running (01m11.0s), 1000/1000 VUs, 434825 complete and 0 interrupted iterations
+default   [  72% ] 1000 VUs  01m11.0s/10m0s  434825/600000 shared iters
+
+running (01m12.0s), 1000/1000 VUs, 441599 complete and 0 interrupted iterations
+default   [  74% ] 1000 VUs  01m12.0s/10m0s  441599/600000 shared iters
+
+running (01m13.0s), 1000/1000 VUs, 448418 complete and 0 interrupted iterations
+default   [  75% ] 1000 VUs  01m13.0s/10m0s  448418/600000 shared iters
+
+running (01m14.0s), 1000/1000 VUs, 455441 complete and 0 interrupted iterations
+default   [  76% ] 1000 VUs  01m14.0s/10m0s  455441/600000 shared iters
+
+running (01m15.0s), 1000/1000 VUs, 463581 complete and 0 interrupted iterations
+default   [  77% ] 1000 VUs  01m15.0s/10m0s  463581/600000 shared iters
+
+running (01m16.0s), 1000/1000 VUs, 471305 complete and 0 interrupted iterations
+default   [  79% ] 1000 VUs  01m16.0s/10m0s  471305/600000 shared iters
+
+running (01m17.0s), 1000/1000 VUs, 477641 complete and 0 interrupted iterations
+default   [  80% ] 1000 VUs  01m17.0s/10m0s  477641/600000 shared iters
+
+running (01m18.0s), 1000/1000 VUs, 484446 complete and 0 interrupted iterations
+default   [  81% ] 1000 VUs  01m18.0s/10m0s  484446/600000 shared iters
+
+running (01m19.0s), 1000/1000 VUs, 491993 complete and 0 interrupted iterations
+default   [  82% ] 1000 VUs  01m19.0s/10m0s  491993/600000 shared iters
+
+running (01m20.0s), 1000/1000 VUs, 498759 complete and 0 interrupted iterations
+default   [  83% ] 1000 VUs  01m20.0s/10m0s  498759/600000 shared iters
+
+running (01m21.0s), 1000/1000 VUs, 504225 complete and 0 interrupted iterations
+default   [  84% ] 1000 VUs  01m21.0s/10m0s  504225/600000 shared iters
+
+running (01m22.0s), 1000/1000 VUs, 510651 complete and 0 interrupted iterations
+default   [  85% ] 1000 VUs  01m22.0s/10m0s  510651/600000 shared iters
+
+running (01m23.0s), 1000/1000 VUs, 517858 complete and 0 interrupted iterations
+default   [  86% ] 1000 VUs  01m23.0s/10m0s  517858/600000 shared iters
+
+running (01m24.0s), 1000/1000 VUs, 525491 complete and 0 interrupted iterations
+default   [  88% ] 1000 VUs  01m24.0s/10m0s  525491/600000 shared iters
+
+running (01m25.0s), 1000/1000 VUs, 533528 complete and 0 interrupted iterations
+default   [  89% ] 1000 VUs  01m25.0s/10m0s  533529/600000 shared iters
+
+running (01m26.0s), 1000/1000 VUs, 540868 complete and 0 interrupted iterations
+default   [  90% ] 1000 VUs  01m26.0s/10m0s  540868/600000 shared iters
+
+running (01m27.0s), 1000/1000 VUs, 547814 complete and 0 interrupted iterations
+default   [  91% ] 1000 VUs  01m27.0s/10m0s  547814/600000 shared iters
+
+running (01m28.0s), 1000/1000 VUs, 555111 complete and 0 interrupted iterations
+default   [  93% ] 1000 VUs  01m28.0s/10m0s  555111/600000 shared iters
+
+running (01m29.0s), 1000/1000 VUs, 561965 complete and 0 interrupted iterations
+default   [  94% ] 1000 VUs  01m29.0s/10m0s  561966/600000 shared iters
+
+running (01m30.0s), 1000/1000 VUs, 569215 complete and 0 interrupted iterations
+default   [  95% ] 1000 VUs  01m30.0s/10m0s  569215/600000 shared iters
+
+running (01m31.0s), 1000/1000 VUs, 575715 complete and 0 interrupted iterations
+default   [  96% ] 1000 VUs  01m31.0s/10m0s  575715/600000 shared iters
+
+running (01m32.0s), 1000/1000 VUs, 582088 complete and 0 interrupted iterations
+default   [  97% ] 1000 VUs  01m32.0s/10m0s  582088/600000 shared iters
+
+running (01m33.0s), 1000/1000 VUs, 588206 complete and 0 interrupted iterations
+default   [  98% ] 1000 VUs  01m33.0s/10m0s  588209/600000 shared iters
+
+running (01m34.0s), 1000/1000 VUs, 595470 complete and 0 interrupted iterations
+default   [  99% ] 1000 VUs  01m34.0s/10m0s  595470/600000 shared iters
+
+running (01m34.6s), 0000/1000 VUs, 600000 complete and 0 interrupted iterations
+default ✓ [ 100% ] 1000 VUs  01m34.6s/10m0s  600000/600000 shared iters
+
+     data_received..................: 68 MB  717 kB/s
+     data_sent......................: 52 MB  552 kB/s
+     http_req_blocked...............: avg=593.32µs min=0s     med=1µs      max=2.04s   p(90)=2µs      p(95)=2µs     
+     http_req_connecting............: avg=591.44µs min=0s     med=0s       max=2s      p(90)=0s       p(95)=0s      
+     http_req_duration..............: avg=156.87ms min=7.22ms med=146.76ms max=1.29s   p(90)=202.19ms p(95)=226.08ms
+       { expected_response:true }...: avg=156.87ms min=7.22ms med=146.76ms max=1.29s   p(90)=202.19ms p(95)=226.08ms
+     http_req_failed................: 0.00%  ✓ 0           ✗ 600000
+     http_req_receiving.............: avg=19.94µs  min=4µs    med=13µs     max=10.18ms p(90)=26µs     p(95)=40µs    
+     http_req_sending...............: avg=8.45µs   min=1µs    med=5µs      max=21.44ms p(90)=8µs      p(95)=12µs    
+     http_req_tls_handshaking.......: avg=0s       min=0s     med=0s       max=0s      p(90)=0s       p(95)=0s      
+     http_req_waiting...............: avg=156.84ms min=7.2ms  med=146.73ms max=1.29s   p(90)=202.16ms p(95)=226.03ms
+     http_reqs......................: 600000 6343.899426/s
+     iteration_duration.............: avg=157.5ms  min=7.24ms med=146.8ms  max=2.35s   p(90)=202.24ms p(95)=226.17ms
+     iterations.....................: 600000 6343.899426/s
+     vus............................: 1000   min=1000      max=1000
+     vus_max........................: 1000   min=1000      max=1000
+
+
+running (01m34.6s), 0000/1000 VUs, 600000 complete and 0 interrupted iterations
+default ✓ [ 100% ] 1000 VUs  01m34.6s/10m0s  600000/600000 shared iters

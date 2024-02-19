@@ -1,0 +1,607 @@
+Sa 17. Feb 13:02:31 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     1.21%     153.7MiB / 7.743GiB   1.94%
+services   0.42%     194MiB / 7.743GiB     2.45%
+Sa 17. Feb 13:02:35 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     127.87%   202.2MiB / 7.743GiB   2.55%
+services   0.27%     194MiB / 7.743GiB     2.45%
+Sa 17. Feb 13:02:38 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     372.08%   558.2MiB / 7.743GiB   7.04%
+services   150.96%   228.6MiB / 7.743GiB   2.88%
+Sa 17. Feb 13:02:42 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     270.09%   559.6MiB / 7.743GiB   7.06%
+services   0.35%     238.9MiB / 7.743GiB   3.01%
+Sa 17. Feb 13:02:45 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     0.77%     557.7MiB / 7.743GiB   7.03%
+services   0.30%     238.9MiB / 7.743GiB   3.01%
+Sa 17. Feb 13:02:49 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     0.60%     557.7MiB / 7.743GiB   7.03%
+services   0.32%     235.6MiB / 7.743GiB   2.97%
+Sa 17. Feb 13:02:52 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     141.99%   568.3MiB / 7.743GiB   7.17%
+services   198.49%   238.1MiB / 7.743GiB   3.00%
+Sa 17. Feb 13:02:56 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     12.02MiB / 7.743GiB   0.15%
+tomcat     283.59%   644.1MiB / 7.743GiB   8.12%
+services   213.22%   242MiB / 7.743GiB     3.05%
+Sa 17. Feb 13:03:00 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.51%     11.45MiB / 7.743GiB   0.14%
+tomcat     281.54%   637.4MiB / 7.743GiB   8.04%
+services   211.29%   245.9MiB / 7.743GiB   3.10%
+Sa 17. Feb 13:03:03 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     235.14%   637.7MiB / 7.743GiB   8.04%
+services   215.00%   252.4MiB / 7.743GiB   3.18%
+Sa 17. Feb 13:03:07 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     268.20%   637.4MiB / 7.743GiB   8.04%
+services   209.46%   255.6MiB / 7.743GiB   3.22%
+Sa 17. Feb 13:03:10 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     280.75%   639.2MiB / 7.743GiB   8.06%
+services   222.65%   263.3MiB / 7.743GiB   3.32%
+Sa 17. Feb 13:03:13 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     280.40%   638.3MiB / 7.743GiB   8.05%
+services   203.24%   267.5MiB / 7.743GiB   3.37%
+Sa 17. Feb 13:03:16 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     280.45%   637.9MiB / 7.743GiB   8.05%
+services   216.35%   272.4MiB / 7.743GiB   3.44%
+Sa 17. Feb 13:03:19 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     285.30%   638.2MiB / 7.743GiB   8.05%
+services   217.42%   276.4MiB / 7.743GiB   3.49%
+Sa 17. Feb 13:03:22 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     295.36%   638.7MiB / 7.743GiB   8.06%
+services   215.31%   280.7MiB / 7.743GiB   3.54%
+Sa 17. Feb 13:03:25 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     193.81%   638.3MiB / 7.743GiB   8.05%
+services   161.11%   281.3MiB / 7.743GiB   3.55%
+Sa 17. Feb 13:03:28 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     282.20%   638.3MiB / 7.743GiB   8.05%
+services   213.41%   286.1MiB / 7.743GiB   3.61%
+Sa 17. Feb 13:03:31 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.10%     6.934MiB / 7.743GiB   0.09%
+tomcat     273.07%   637.8MiB / 7.743GiB   8.04%
+services   220.43%   291.5MiB / 7.743GiB   3.68%
+Sa 17. Feb 13:03:34 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     279.13%   638.3MiB / 7.743GiB   8.05%
+services   213.45%   294.7MiB / 7.743GiB   3.72%
+Sa 17. Feb 13:03:37 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     257.39%   638MiB / 7.743GiB     8.05%
+services   234.91%   299.6MiB / 7.743GiB   3.78%
+Sa 17. Feb 13:03:40 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     272.46%   702.2MiB / 7.743GiB   8.86%
+services   204.10%   302.6MiB / 7.743GiB   3.82%
+Sa 17. Feb 13:03:43 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     255.89%   704MiB / 7.743GiB     8.88%
+services   199.11%   307.7MiB / 7.743GiB   3.88%
+Sa 17. Feb 13:03:46 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     294.12%   703.2MiB / 7.743GiB   8.87%
+services   218.05%   309.7MiB / 7.743GiB   3.91%
+Sa 17. Feb 13:03:49 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     289.90%   702.6MiB / 7.743GiB   8.86%
+services   222.20%   313.4MiB / 7.743GiB   3.95%
+Sa 17. Feb 13:03:52 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     283.06%   702.7MiB / 7.743GiB   8.86%
+services   210.25%   316.8MiB / 7.743GiB   4.00%
+Sa 17. Feb 13:03:55 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     285.21%   705.9MiB / 7.743GiB   8.90%
+services   216.02%   322.1MiB / 7.743GiB   4.06%
+Sa 17. Feb 13:03:58 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.934MiB / 7.743GiB   0.09%
+tomcat     281.38%   702.7MiB / 7.743GiB   8.86%
+services   213.82%   320.1MiB / 7.743GiB   4.04%
+Sa 17. Feb 13:04:01 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     255.78%   701.9MiB / 7.743GiB   8.85%
+services   192.80%   323MiB / 7.743GiB     4.07%
+Sa 17. Feb 13:04:04 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     259.93%   704.2MiB / 7.743GiB   8.88%
+services   213.79%   329.1MiB / 7.743GiB   4.15%
+Sa 17. Feb 13:04:07 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     225.14%   702.4MiB / 7.743GiB   8.86%
+services   269.25%   333.4MiB / 7.743GiB   4.20%
+Sa 17. Feb 13:04:10 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     294.83%   702.7MiB / 7.743GiB   8.86%
+services   215.91%   337.1MiB / 7.743GiB   4.25%
+Sa 17. Feb 13:04:13 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     285.33%   702.4MiB / 7.743GiB   8.86%
+services   212.52%   340.5MiB / 7.743GiB   4.29%
+Sa 17. Feb 13:04:16 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     287.61%   702.6MiB / 7.743GiB   8.86%
+services   223.01%   343.5MiB / 7.743GiB   4.33%
+Sa 17. Feb 13:04:19 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     286.04%   702.9MiB / 7.743GiB   8.86%
+services   222.31%   346.2MiB / 7.743GiB   4.37%
+Sa 17. Feb 13:04:22 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     204.60%   703.5MiB / 7.743GiB   8.87%
+services   170.80%   347.4MiB / 7.743GiB   4.38%
+Sa 17. Feb 13:04:25 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     271.10%   703.2MiB / 7.743GiB   8.87%
+services   217.09%   349.8MiB / 7.743GiB   4.41%
+Sa 17. Feb 13:04:28 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     0.88%     696.9MiB / 7.743GiB   8.79%
+services   0.69%     349.8MiB / 7.743GiB   4.41%
+Sa 17. Feb 13:04:31 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.30%     6.938MiB / 7.743GiB   0.09%
+tomcat     1.04%     696.9MiB / 7.743GiB   8.79%
+services   0.47%     349.8MiB / 7.743GiB   4.41%
+Sa 17. Feb 13:04:35 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.40%     696.9MiB / 7.743GiB   8.79%
+services   0.32%     349.8MiB / 7.743GiB   4.41%
+Sa 17. Feb 13:04:38 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.54%     696.9MiB / 7.743GiB   8.79%
+services   0.32%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:04:41 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.78%     696.9MiB / 7.743GiB   8.79%
+services   0.38%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:04:44 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.43%     697MiB / 7.743GiB     8.79%
+services   0.33%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:04:47 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.71%     697MiB / 7.743GiB     8.79%
+services   0.69%     344MiB / 7.743GiB     4.34%
+Sa 17. Feb 13:04:50 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.49%     697MiB / 7.743GiB     8.79%
+services   0.39%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:04:53 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.44%     697MiB / 7.743GiB     8.79%
+services   0.31%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:04:56 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.57%     697MiB / 7.743GiB     8.79%
+services   0.49%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:04:59 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.59%     697MiB / 7.743GiB     8.79%
+services   0.36%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:05:02 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.66%     697MiB / 7.743GiB     8.79%
+services   0.28%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:05:05 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.42%     697MiB / 7.743GiB     8.79%
+services   0.31%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:05:08 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.49%     697MiB / 7.743GiB     8.79%
+services   0.31%     343.9MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:05:11 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     3.06%     696.8MiB / 7.743GiB   8.79%
+services   1.49%     343.8MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:05:14 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     0.85%     696.8MiB / 7.743GiB   8.79%
+services   0.31%     343.8MiB / 7.743GiB   4.34%
+Sa 17. Feb 13:05:18 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     329.06%   807MiB / 7.743GiB     10.18%
+services   162.95%   347MiB / 7.743GiB     4.38%
+Sa 17. Feb 13:05:21 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     287.13%   809.5MiB / 7.743GiB   10.21%
+services   208.60%   351.4MiB / 7.743GiB   4.43%
+Sa 17. Feb 13:05:24 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     274.17%   809.6MiB / 7.743GiB   10.21%
+services   227.67%   357.4MiB / 7.743GiB   4.51%
+Sa 17. Feb 13:05:27 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     282.88%   809.9MiB / 7.743GiB   10.21%
+services   219.53%   358.5MiB / 7.743GiB   4.52%
+Sa 17. Feb 13:05:30 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.938MiB / 7.743GiB   0.09%
+tomcat     243.27%   809.4MiB / 7.743GiB   10.21%
+services   264.69%   363.1MiB / 7.743GiB   4.58%
+Sa 17. Feb 13:05:33 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     284.41%   809.6MiB / 7.743GiB   10.21%
+services   218.40%   370.1MiB / 7.743GiB   4.67%
+Sa 17. Feb 13:05:36 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     283.21%   809.6MiB / 7.743GiB   10.21%
+services   221.26%   374.6MiB / 7.743GiB   4.72%
+Sa 17. Feb 13:05:39 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     284.48%   809.8MiB / 7.743GiB   10.21%
+services   213.71%   376.1MiB / 7.743GiB   4.74%
+Sa 17. Feb 13:05:42 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     284.61%   810.6MiB / 7.743GiB   10.22%
+services   210.67%   381.1MiB / 7.743GiB   4.81%
+Sa 17. Feb 13:05:45 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     285.11%   810.3MiB / 7.743GiB   10.22%
+services   211.64%   386MiB / 7.743GiB     4.87%
+Sa 17. Feb 13:05:48 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     291.62%   810.7MiB / 7.743GiB   10.22%
+services   218.99%   387.4MiB / 7.743GiB   4.89%
+Sa 17. Feb 13:05:51 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     290.64%   811.1MiB / 7.743GiB   10.23%
+services   218.57%   389.6MiB / 7.743GiB   4.91%
+Sa 17. Feb 13:05:54 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     277.24%   810.4MiB / 7.743GiB   10.22%
+services   202.54%   394.6MiB / 7.743GiB   4.98%
+Sa 17. Feb 13:05:57 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     277.90%   810.7MiB / 7.743GiB   10.22%
+services   203.31%   396.8MiB / 7.743GiB   5.00%
+Sa 17. Feb 13:06:00 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     293.04%   812.3MiB / 7.743GiB   10.24%
+services   212.49%   400.3MiB / 7.743GiB   5.05%
+Sa 17. Feb 13:06:03 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     280.54%   810.5MiB / 7.743GiB   10.22%
+services   239.13%   402.6MiB / 7.743GiB   5.08%
+Sa 17. Feb 13:06:06 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     289.16%   811.4MiB / 7.743GiB   10.23%
+services   209.29%   405.2MiB / 7.743GiB   5.11%
+Sa 17. Feb 13:06:09 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     278.81%   810.5MiB / 7.743GiB   10.22%
+services   236.23%   408.9MiB / 7.743GiB   5.16%
+Sa 17. Feb 13:06:12 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     302.85%   811.1MiB / 7.743GiB   10.23%
+services   217.68%   414.6MiB / 7.743GiB   5.23%
+Sa 17. Feb 13:06:15 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     278.00%   810.5MiB / 7.743GiB   10.22%
+services   212.33%   418MiB / 7.743GiB     5.27%
+Sa 17. Feb 13:06:18 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     295.03%   811.1MiB / 7.743GiB   10.23%
+services   212.46%   423.3MiB / 7.743GiB   5.34%
+Sa 17. Feb 13:06:21 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     263.16%   811MiB / 7.743GiB     10.23%
+services   213.52%   427.1MiB / 7.743GiB   5.39%
+Sa 17. Feb 13:06:24 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     293.31%   811.5MiB / 7.743GiB   10.23%
+services   202.06%   426.2MiB / 7.743GiB   5.38%
+Sa 17. Feb 13:06:27 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     270.54%   811.5MiB / 7.743GiB   10.23%
+services   206.96%   429.7MiB / 7.743GiB   5.42%
+Sa 17. Feb 13:06:30 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     285.29%   813.7MiB / 7.743GiB   10.26%
+services   231.10%   433.9MiB / 7.743GiB   5.47%
+Sa 17. Feb 13:06:33 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     288.81%   811.8MiB / 7.743GiB   10.24%
+services   219.52%   437MiB / 7.743GiB     5.51%
+Sa 17. Feb 13:06:36 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     269.16%   811.1MiB / 7.743GiB   10.23%
+services   221.92%   439.9MiB / 7.743GiB   5.55%
+Sa 17. Feb 13:06:39 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     275.70%   811.2MiB / 7.743GiB   10.23%
+services   211.72%   441.3MiB / 7.743GiB   5.57%
+Sa 17. Feb 13:06:42 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     281.81%   811.3MiB / 7.743GiB   10.23%
+services   207.30%   442.9MiB / 7.743GiB   5.59%
+Sa 17. Feb 13:06:45 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     288.11%   811.7MiB / 7.743GiB   10.24%
+services   226.08%   445.8MiB / 7.743GiB   5.62%
+Sa 17. Feb 13:06:48 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     273.78%   811.2MiB / 7.743GiB   10.23%
+services   231.89%   448.8MiB / 7.743GiB   5.66%
+Sa 17. Feb 13:06:51 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     282.71%   812MiB / 7.743GiB     10.24%
+services   207.68%   455.5MiB / 7.743GiB   5.74%
+Sa 17. Feb 13:06:54 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     6.93MiB / 7.743GiB    0.09%
+tomcat     277.25%   811.1MiB / 7.743GiB   10.23%
+services   201.60%   454.8MiB / 7.743GiB   5.74%
+Sa 17. Feb 13:06:57 CET 2024
+Sa 17. Feb 13:10:57 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     0.45%     205.1MiB / 7.743GiB   2.59%
+services   0.27%     286.1MiB / 7.743GiB   3.61%
+Sa 17. Feb 13:11:01 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     0.88%     205.1MiB / 7.743GiB   2.59%
+services   0.39%     286.2MiB / 7.743GiB   3.61%
+Sa 17. Feb 13:11:05 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     0.55%     205.1MiB / 7.743GiB   2.59%
+services   0.35%     286.1MiB / 7.743GiB   3.61%
+Sa 17. Feb 13:11:08 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     384.03%   563.4MiB / 7.743GiB   7.11%
+services   130.05%   319.7MiB / 7.743GiB   4.03%
+Sa 17. Feb 13:11:12 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     347.08%   990.3MiB / 7.743GiB   12.49%
+services   186.76%   326.3MiB / 7.743GiB   4.12%
+Sa 17. Feb 13:11:15 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     276.77%   992.8MiB / 7.743GiB   12.52%
+services   214.25%   333.1MiB / 7.743GiB   4.20%
+Sa 17. Feb 13:11:19 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     285.12%   995.5MiB / 7.743GiB   12.55%
+services   210.69%   340.4MiB / 7.743GiB   4.29%
+Sa 17. Feb 13:11:22 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     281.83%   993.3MiB / 7.743GiB   12.53%
+services   221.48%   345.1MiB / 7.743GiB   4.35%
+Sa 17. Feb 13:11:25 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     297.52%   994.1MiB / 7.743GiB   12.54%
+services   200.71%   349.2MiB / 7.743GiB   4.40%
+Sa 17. Feb 13:11:28 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     200.85%   993.6MiB / 7.743GiB   12.53%
+services   171.30%   351.9MiB / 7.743GiB   4.44%
+Sa 17. Feb 13:11:31 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     282.92%   993.7MiB / 7.743GiB   12.53%
+services   215.08%   355.1MiB / 7.743GiB   4.48%
+Sa 17. Feb 13:11:34 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     286.50%   994.1MiB / 7.743GiB   12.54%
+services   214.19%   358.8MiB / 7.743GiB   4.52%
+Sa 17. Feb 13:11:37 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     288.94%   994.2MiB / 7.743GiB   12.54%
+services   211.05%   364.5MiB / 7.743GiB   4.60%
+Sa 17. Feb 13:11:40 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     295.73%   994.2MiB / 7.743GiB   12.54%
+services   209.98%   368.6MiB / 7.743GiB   4.65%
+Sa 17. Feb 13:11:43 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     279.89%   994.4MiB / 7.743GiB   12.54%
+services   223.41%   371.9MiB / 7.743GiB   4.69%
+Sa 17. Feb 13:11:46 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     224.96%   994MiB / 7.743GiB     12.54%
+services   183.02%   373.2MiB / 7.743GiB   4.71%
+Sa 17. Feb 13:11:49 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     292.55%   999.8MiB / 7.743GiB   12.61%
+services   204.77%   378.2MiB / 7.743GiB   4.77%
+Sa 17. Feb 13:11:52 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.45MiB / 7.743GiB   0.18%
+tomcat     286.74%   999.6MiB / 7.743GiB   12.61%
+services   216.38%   383.2MiB / 7.743GiB   4.83%
+Sa 17. Feb 13:11:55 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     295.44%   1000MiB / 7.743GiB    12.62%
+services   228.27%   388.3MiB / 7.743GiB   4.90%
+Sa 17. Feb 13:11:58 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     291.55%   1001MiB / 7.743GiB    12.62%
+services   224.01%   389.5MiB / 7.743GiB   4.91%
+Sa 17. Feb 13:12:01 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     290.81%   999.9MiB / 7.743GiB   12.61%
+services   220.28%   393.7MiB / 7.743GiB   4.97%
+Sa 17. Feb 13:12:04 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     217.83%   1000MiB / 7.743GiB    12.61%
+services   177.07%   398.7MiB / 7.743GiB   5.03%
+Sa 17. Feb 13:12:07 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     299.25%   999.7MiB / 7.743GiB   12.61%
+services   213.58%   402.9MiB / 7.743GiB   5.08%
+Sa 17. Feb 13:12:10 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     254.41%   999.5MiB / 7.743GiB   12.60%
+services   264.29%   405.9MiB / 7.743GiB   5.12%
+Sa 17. Feb 13:12:13 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     282.57%   1001MiB / 7.743GiB    12.62%
+services   215.49%   408.2MiB / 7.743GiB   5.15%
+Sa 17. Feb 13:12:16 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     290.26%   1000MiB / 7.743GiB    12.61%
+services   227.49%   408.2MiB / 7.743GiB   5.15%
+Sa 17. Feb 13:12:19 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     271.51%   1000MiB / 7.743GiB    12.61%
+services   218.87%   412.6MiB / 7.743GiB   5.20%
+Sa 17. Feb 13:12:22 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     283.13%   999.8MiB / 7.743GiB   12.61%
+services   210.51%   417.4MiB / 7.743GiB   5.26%
+Sa 17. Feb 13:12:25 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     263.27%   1000MiB / 7.743GiB    12.61%
+services   207.77%   420.1MiB / 7.743GiB   5.30%
+Sa 17. Feb 13:12:28 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     278.67%   1000MiB / 7.743GiB    12.61%
+services   218.73%   420.2MiB / 7.743GiB   5.30%
+Sa 17. Feb 13:12:31 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     276.56%   1000MiB / 7.743GiB    12.61%
+services   227.72%   423.6MiB / 7.743GiB   5.34%
+Sa 17. Feb 13:12:34 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     255.35%   1000MiB / 7.743GiB    12.61%
+services   256.99%   430.8MiB / 7.743GiB   5.43%
+Sa 17. Feb 13:12:37 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     281.55%   1000MiB / 7.743GiB    12.62%
+services   216.68%   432.1MiB / 7.743GiB   5.45%
+Sa 17. Feb 13:12:40 CET 2024
+NAME       CPU %     MEM USAGE / LIMIT     MEM %
+work       0.00%     14.46MiB / 7.743GiB   0.18%
+tomcat     283.65%   1000MiB / 7.743GiB    12.61%
+services   222.19%   439MiB / 7.743GiB     5.54%
+Sa 17. Feb 13:12:43 CET 2024
+NAME       CPU %      MEM USAGE / LIMIT     MEM %
+work       270.80%    14.56MiB / 7.743GiB   0.18%
+tomcat     2531.19%   974.5MiB / 7.743GiB   12.29%
+services   828.53%    431.7MiB / 7.743GiB   5.44%
+Sa 17. Feb 13:13:05 CET 2024
