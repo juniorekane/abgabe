@@ -7,20 +7,122 @@
 \subsection{Was ist ein Netzwerk?}
 
 
-
 \subsection{Was ist ein Image?}
 
+Images sind schreibgeschützte Templates mit Anweisungen zum Erstellen eines Containers. Ein docker Image erstellt Container zur Ausführung auf der Docker-Plattform. ein Docker-Image führt Code in einem Docker-Container aus und es ist möglich mehrere Container aus demselben Image zu erstellen.
+
+\subsubsection{Wie erstellt man ein Docker-Image ?}
+
+Um ein Docker-Image zu erstellen, verwendet man den \texttt{docker image build} Befehl zusammen mit weiteren Optionen zur Spezifikation des Build-Kontexts und des Tags des Images. Zum Beispiel:
+
+\begin{verbatim}
+docker image build --progress=plain -t image-fancy context
+\end{verbatim}
+
+Dieser Befehl erstellt ein Image mit dem Namen \texttt{image-fancy} aus dem Build-Kontext \texttt{context}, wobei \texttt{--progress=plain} eine einfachere Ausgabe während des Build-Prozesses erzeugt.
+
+\subsection{Was ist ein Container ? }
+
+Ein Container ist eine Abstraktion aud fer App-Ebene, die Code und Abhängigkeiten zusammenfasst. Mehrere Container könnenauf demselben Computer ausgeführt werden und den Betriebssystemkernel mit anderen Containern teilen, die jeweils als isolierte Prozesse im Benutzerbereich ausgeführt weden. Container nehmen weniger Platz ein als VMs und können mehr Anwendungen verarbeiten.
+
+\subsubsection{Wie erstellt und startet man einen Container?}
+
+Ein Container wird basierend auf einem Docker-Image erstellt und gestartet. Das folgende Beispiel zeigt, wie ein Container mit dem Namen \texttt{services} erstellt und konfiguriert wird:
+
+\begin{verbatim}
+docker container create \
+    --name "services" \
+    --hostname "services" \
+    --network mynet \
+    --volume "$PWD/www/:/var/www/html" \
+    --volume "$PWD/log/:/log" \
+    --publish 80:80 \
+    --publish 8080:8080 \
+    "image-fancy"
+\end{verbatim}
+
+Dieses Kommando erstellt einen Container, der zum \texttt{mynet} Netzwerk gehört, Volumes für Webinhalte und Logdateien einbindet und Ports 80 sowie 8080 veröffentlicht.
+
+Um einen Docker-Container zu starten, verwendet man den Befehl \texttt{docker container start} gefolgt vom Namen oder der ID des Containers, den man starten möchte. Dieser Befehl ändert den Zustand des Containers von gestoppt zu laufend.
+
+Wir haben einen Docker-Container mit dem Namen \texttt{services} erstellt. Um diesen Container zu starten, der Befehl dazu lautet:
+
+\begin{verbatim}
+docker container start services
+\end{verbatim}
+
+Dieser Befehl sucht nach einem Docker-Container, der \texttt{services} heißt, und startet ihn. Sobald der Container gestartet ist, läuft er im Hintergrund weiter, und die in ihm enthaltene Anwendung beginnt mit ihrer Ausführung basierend auf den beim Erstellen des Containers festgelegten Konfigurationen und Einstellungen.
+
+\subsubsection{Überprüfung des Container-Status}
+
+Um zu überprüfen, ob der Container erfolgreich gestartet wurde und läuft, kann man den Befehl \texttt{docker container ls} verwenden, der alle laufenden Container auflistet. Wenn Sie auch gestoppte Container sehen möchten, können Sie \texttt{docker container ls --all} hinzufügen, um eine vollständige Liste zu erhalten.
+
+\subsection{Wie stoppt und entfernt man einen Container?}
+
+Zum Stoppen und Entfernen eines Containers verwendet man die Befehle \texttt{docker container stop} und \texttt{docker container rm}. Das folgende Skript demonstriert diesen Prozess für einen Container namens \texttt{services}:
+
+\begin{verbatim}
+if docker container ls | grep -q "\bservices$"; then
+    docker container stop services
+fi
+
+if docker container ls --all | grep -q "\bservices$"; then
+    docker container rm services
+fi
+\end{verbatim}
+
+Zusätzlich entfernt das Skript veraltete SSH-Konfigurationen für den Container aus \texttt{\~/.ssh/docker\_config}.
+
+\subsubsection {Wie stoppt man einen Container ? }
+
+Um einen Container zu stoppen, verwendet man den Befehl \texttt{\$ docker stop} oder \texttt{\$ docker kill}
+
+Beispiel:  \texttt{\$ docker container stop hello-word}
+
+\texttt{\$ docker kill hello-world },  damit wird der Container sofort gestoppt. Damit wird ein SIGKILL gesendet und dabei das SIGTERM übersprungen.
+
+Es ist auch möglich alle laufenden Container zu stoppen, indem man folgenden Befehl benutzt:
+docker stop \texttt{\$(docker ps -q)}
 
 
-\subsection{Was ist ein Container?}
+q Flag zeigt nur die numerischen IDs an
 
+\subsection{Was sind die Vor - und Nachteile von Docker ? }
 
+\subsubsection{Vorteile}
 
-%Herman bitte hier einfügen ich habe vergessen wie es noch lautet
-\subsection{Noch ein Punkt?}
+Docker bietet eine Vielzahl von Vorteilen, die es zu einem beliebten Werkzeug in der Softwareentwicklung und im IT-Betrieb gemacht haben:
 
+\begin{itemize}
+    \item \textbf{Portabilität:} Einmal erstellte Docker-Images können über verschiedene Umgebungen hinweg ohne Änderungen ausgeführt werden. Dies erleichtert die Bereitstellung und Migration von Anwendungen erheblich.
+    \item \textbf{Konsistenz:} Docker-Container bieten eine konsistente Umgebung für die Anwendung, unabhängig davon, wo der Container ausgeführt wird. Dies reduziert das Problem "es funktioniert auf meinem Rechner nicht", indem Diskrepanzen zwischen Entwicklung, Test und Produktion minimiert werden.
+    \item \textbf{Isolation:} Container sind voneinander isoliert und verpacken ihre eigene Software, Bibliotheken und Konfigurationen. Dies verbessert die Sicherheit und vereinfacht Abhängigkeitsmanagement.
+    \item \textbf{Ressourceneffizienz:} Docker nutzt die Ressourcen des Host-Betriebssystems effizienter als traditionelle Virtualisierungstechnologien, was zu einer besseren Hardwareauslastung führt.
+    \item \textbf{Schnelle Bereitstellung:} Container können innerhalb von Sekunden gestartet und gestoppt werden, was die Bereitstellungszeiten verkürzt und eine schnelle Skalierung ermöglicht.
+    \item \textbf{Entwicklungseffizienz:} Docker unterstützt Entwickler mit der Möglichkeit, lokale Umgebungen schnell einzurichten, was die Entwicklungszyklen beschleunigt.
+    \item \textbf{Mikroservice-Architekturen:} Docker eignet sich hervorragend für die Entwicklung und den Betrieb von mikroservice-basierten Anwendungen, indem es die Unabhängigkeit und Isolation der Services fördert.
+\end{itemize}
 
+\subsubsection{Nachteile}
 
+Trotz seiner vielen Vorteile hat Docker auch einige Nachteile, die berücksichtigt werden sollten:
+
+\begin{itemize}
+    \item \textbf{Sicherheitsrisiken:} Die Isolation zwischen Containern ist nicht so stark wie bei vollständig virtualisierten Umgebungen, was potenzielle Sicherheitsrisiken birgt. Es ist wichtig, Sicherheitspraktiken wie das Prinzip der geringsten Privilegien und regelmäßige Updates zu befolgen.
+    \item \textbf{Komplexität:} Die Verwaltung von Docker-Containern und -Orchestrierung, insbesondere in großem Maßstab, kann komplex sein und erfordert ein gutes Verständnis von Docker-Netzwerken, Volumes und Sicherheitskonfigurationen.
+    \item \textbf{Speicher- und Datenmanagement:} Persistente Daten und deren Verwaltung können in containerisierten Anwendungen eine Herausforderung darstellen, besonders wenn es um Zustandsbehaftete Dienste wie Datenbanken geht.
+    \item \textbf{Plattformabhängigkeiten:} Obwohl Docker auf Portabilität ausgelegt ist, können bestimmte Images aufgrund von Systemabhängigkeiten (z.B. Kernel-Versionen) nicht auf allen Plattformen ausgeführt werden.
+    \item \textbf{Performance-Überlegungen:} Während Container im Allgemeinen effizient sind, können spezifische Workloads oder Konfigurationen in Containern im Vergleich zu nativen Ausführungen oder anderen Virtualisierungstechnologien Leistungseinbußen erleiden.
+    \item \textbf{Lernkurve:} Die umfangreichen Funktionen und das Ökosystem von Docker können für Neueinsteiger überwältigend sein und erfordern Zeit und Ressourcen, um effektiv genutzt zu werden.
+\end{itemize}
 
 \subsection{Wie haben wir Docker verwendet?}
+
+In unseren Skripten haben wir Docker verwendet, um eine isolierte und konsistente Umgebung für unsere Anwendungen zu schaffen. Die Skripte automatisieren den Prozess des Builds, der Bereitstellung und des Managements von Containern. Hier einige Beispiele:
+
+\begin{itemize}
+    \item \textbf{Image-Erstellung:} Wir nutzen den \texttt{docker image build} Befehl, um Docker-Images aus unseren Anwendungsquellen zu erstellen. Dies ermöglicht eine einheitliche und reproduzierbare Umgebung für die Entwicklung und das Deployment unserer Anwendung.
+    \item \textbf{Container-Management:} Unsere Skripte automatisieren das Erstellen, Starten, Stoppen und Entfernen von Containern. Dies vereinfacht die Verwaltung der Lebenszyklen unserer Anwendungen erheblich.
+    \item \textbf{Netzwerk und Volumen:} Wir konfigurieren Netzwerke und binden Volumes ein, um die Kommunikation zwischen Containern zu ermöglichen und persistente Daten zu verwalten. Dies ist entscheidend für komplexe Anwendungen, die aus mehreren Diensten bestehen und Zustandsdaten speichern müssen.
+\end{itemize}
 
