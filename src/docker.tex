@@ -73,20 +73,6 @@ fi
 
 Zusätzlich entfernt das Skript veraltete SSH-Konfigurationen für den Container aus \texttt{\~/.ssh/docker\_config}.
 
-\subsubsection {Wie stoppt man einen Container ? }
-
-Um einen Container zu stoppen, verwendet man den Befehl \texttt{\$ docker stop} oder \texttt{\$ docker kill}
-
-Beispiel:  \texttt{\$ docker container stop hello-word}
-
-\texttt{\$ docker kill hello-world },  damit wird der Container sofort gestoppt. Damit wird ein SIGKILL gesendet und dabei das SIGTERM übersprungen.
-
-Es ist auch möglich alle laufenden Container zu stoppen, indem man folgenden Befehl benutzt:
-docker stop \texttt{\$(docker ps -q)}
-
-
-q Flag zeigt nur die numerischen IDs an
-
 \subsection{Was sind die Vor - und Nachteile von Docker ? }
 
 \subsubsection{Vorteile}
