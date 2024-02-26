@@ -2,6 +2,8 @@
 
 %Hier später bei Fortschritt irgendwas hinzufügen
 
+Bei dieser Ausarbeitung haben wir sehr viel Wert darauf gelegt, eine fundierte Analyse anhand unsere Gelernten aus der Vorlesung abzugeben. AUs diesem Grund haben wir nicht nur irgendeinen Code aus der Vorlesung kopiert und eingefügt, sondern, wir haben das Wissen aus der Vorlesung zu unserem Nutzen gemacht und daraus erfolgten verschiedene Analysen mit einem und zwei und noch mehr Containern, damit wir effektiv zeigen können, wie eine Dockerumgebung verwendet werden kann.
+
 \subsection{Analyse mit zwei laufenden Containern}
 
 %Hier sind wichtige Punkte
@@ -11,8 +13,18 @@
 %was haben wir uns dabei gehofft?
 %auf welche Ergebnisse kamen wir?
 %Was haben wir dabei gelernt?
+Basierend auf unsere Idee, ein Java-Servlet mit verschiedenen Dockerkonstellationen laufen zu lassen, haben wir verschiedenen Sachen implementiert. Bei der ersten sowie bei den anderen Anaylse stand im Vordergrund die Vorbereitung der Arbeitsumgebung. Wir mussten uns eine geeignete Dockerumgebung erstellen. Hierfür haben wir zuerst die vorbereitete Umgebung aus der Vorlesung verwendet, aber vorher haben wir die noch ein wenig angepasst, sodass es unsere Vorstellungen entsprechen kann.\\
+
+Der Ordner, den wir hierfür  ausgewählt haben, war \begin{verbatim} /docker-fancy-tomcat-split-sql \end{verbatim}, weil wir gefunden haben, dass er leichter wäre noch mehrfach aufzuteilen. Für dieses erste Experiment waren die Docker nur in  zwei Container jeweils \texttt{work und services}, wobei \textbf{work} unsere Arbeitsumgebung darstellt. Dort wird nur gearbeitet und im Anschluss daran später zum Container \textbf{services} deployt. Im Container \textbf{servcies} laufen im Gegenteil zu \textbf{work} all unsere Dienste, wie zum Beispiel: \texttt{Redis, MariaDB, Tomcat, ein ssh-Server und ein Apache-Server}. Beide Container werden durch einen ssh-Server verbunden und es ist so eingerichtet worde, dass man sich von einem Container zu einem anderen passwortlos bewegen kann.\\
+
+Der Grund, warum wir nicht mit einem Container gearbeitet haben ist leicht zu erklären. Es liegt einfach daran, dass wir vom Vorteil solch einer Umgebung Gebrauch machen wollten, und zwar die Isolation. Die Prozesse auf eine einem Docker finden nämlich isoliert statt, was zu verbesserten Leistungen führt. Noch wichtig zu der Isolation wäre die erhöhte Flexibilität. Nehmen wir als Beispiel einen Fall, den wir bei uns hatten mit einem nicht aktuellen Container hatten. In so einer Situation ließ sich dieser mit wenig Aufwand durch einen aktuellen Container, der unserer Anforderungen entsprach, tauschen.\\
+
+\subsubsection{Aufbau der Container: \texttt{work und service}}
+
+Wie oben erwähnt haben wir uns in diesem ersten Fall mit zwei laufenden Container auseinandergesetzt. und zwar \texttt{work} und \texttt{service}. Betrachten wir nun mal den Aufbau dieser beiden Container.
+
 
 
 \subsection{Analyse mit drei laufenden Containern}
 
-\subsection{Analyse mti vier laufenden Containern}
+\subsection{Analyse mit vier laufenden Containern}
