@@ -19,9 +19,57 @@ Der Ordner, den wir hierfür  ausgewählt haben, war \begin{verbatim} /docker-fa
 
 Der Grund, warum wir nicht mit einem Container gearbeitet haben ist leicht zu erklären. Es liegt einfach daran, dass wir vom Vorteil solch einer Umgebung Gebrauch machen wollten, und zwar die Isolation. Die Prozesse auf eine einem Docker finden nämlich isoliert statt, was zu verbesserten Leistungen führt. Noch wichtig zu der Isolation wäre die erhöhte Flexibilität. Nehmen wir als Beispiel einen Fall, den wir bei uns hatten mit einem nicht aktuellen Container hatten. In so einer Situation ließ sich dieser mit wenig Aufwand durch einen aktuellen Container, der unserer Anforderungen entsprach, tauschen.\\
 
+\subsubsection{Aufbau der Image: \texttt{fancy}}
+
+\subsubsection{Aufbau unseres lokalen Netzwerkes: \textt{mynet}}
+
 \subsubsection{Aufbau der Container: \texttt{work und service}}
 
 Wie oben erwähnt haben wir uns in diesem ersten Fall mit zwei laufenden Container auseinandergesetzt. und zwar \texttt{work} und \texttt{service}. Betrachten wir nun mal den Aufbau dieser beiden Container.
+
+Wir beginnen erstmal mit \texttt{work}. In diesem Container wurde hauptsächlich gearbeitet, aus diesem Grund ist seine Struktur nur grundlegend und enthält nur einen ssh-Dienst, der beim Starten vom Container ebenfalls gestartet wird. Hierfü stand schon das bash-Skript \texttt{myinit-work.sh} zur Verfügung. dieser Skript ist dafür zuständig einen User anzulegen und den ssh-Dienst zu starten. natürlich gibt es auch einen Aschnitt bzw eine Funktion im Skript, der/die sicherstellt, dass der gestartete Dienst auch entsprechend gestoppt, wird, wenn der Container beendet wird.
+
+
+\defverbatim\CodeOne{
+  \begin{minted}{bash}
+    # start services
+    {
+      /startup/create-user.sh
+      #pw=$(grep "^containerpassword=" /startup/config.txt|cut -d'=' -f2)
+      service ssh start
+      #rm /startup/*
+      echo ready >> /log/state-work.txt
+    } >>$log
+
+  \end{minted}
+  \captionof{listing}{Starten von Diensten in \texttt{\textbf{work}}}
+}
+
+Zum Starten vom Container selbst wird ein anderes Skript names \texttt{start-work.sh} verwendet. Dieses Skript sorgt einfach dafür, dass der work-Container gestartet wird, aber mit zusätzlichen Optionen, wie zum Beispiel, dass es in einem lokal erstellten Netzwerk läuft, vorbereitetete Konfigurationen übernimmt, die sich schon vorab in dem Verzeichnis Startup in \texttt{context/} befinden, und auch zu vorhandenen bekannten Hots hinzugefügt wird. Dadurch wird es möglich sich in diesem Container per ssh zu bewegen, statt auf der Kommandozeile \begin{verbatim} docker container exec -ti work bash \end{verbatim} eingeben zu müssen. Zu den wichtigsten Sachen die work beim Starten kopiert werden, zählen wir, Java-Programme, die Teil unseres Servelt sind.
+\defverbatim\codeOne{
+  \begin{minted}
+    ssh $containername :
+    scp -qr javawebdemo $containername:
+    scp -qr brotundbutter-swe $containername:
+    scp -qr unittester $containername:
+  \end{minted}
+}
+
+Da Work nur der Arbeitsbereich ist und dort nur gecode wird, ist das tatsächlich so, dass man zum Ausführen von Programmen, die zu dem anderen Container deployt. dort laufen alle notwendige Dienste zur korrekten Ausführung der Programme. Die werden ebenfalls in von einem Skript namens \texttt{myinit-services.sh} gestartet und beenden. Es gibt unter anderem solche Dienst wie Redis, Tomcat, MariaDB und einen SSH-Dienst.
+
+\\
+
+\subsubsection{Hoffnung und Erwartungen}
+
+
+Im Laufe des Semesters konnte wir durch unsere Teilnahme an den Veranstaltungen sehr viele Ideen zum Testen haben. Das haben wir versucht in diesem projekt wiederzuspiegeln. Darauf haben wir stets abgezielt, die beigebrachten Konzepten anzuwenden. Wir wollten zum Beispiel Networking anwenden, was ein Zusammenschluss von zwei oder mehr Computern oder anderen, elektronischen Geräten, der den Austausch von Daten und die Nutzung gemeinsamer Ressourcen ermöglicht \cite{ionos}. Wenn bei uns jeder Container einzeln als Computer betrachtet wird, können wir auch von Networking reden. In einem Netz hat jeder Computer eine eigene IP-Adresse, mit der er über das Netz angesprochen werden kann. Dies haben wir uns bei der testphase zur Nutze gemacht, um wiederholt Anfragen an unseren Programmen zu senden.
+
+\\
+
+
+Noch wärhend der Veranstaltung wurden wir in die POSIX-Standard eingeführt. Was wir dazu wissen ist, POSIX heißt (aus dem Englischen) Portable Operating System Interface und ist eine gmeinesam von IEEE und der Open Group für Unix entwickelte standardisierte Programmierschnittstelle, welche die Schnittstelle zwischen Anwendungssoftware und Betriebssystem darstellt. Es ist zu einer Norm geworden, die bei allen Unic-Betriebssystemen verwendet wird. Dabei ist ein betriebssystem wie Windows ausgeschlossen, denn dieses System hat seine eigene Standart. Früher hat jedoch Microsoft versucht, sich an diese Standards zu halten, sind aber später davon rausgegangen.
+
+\\
 
 
 
