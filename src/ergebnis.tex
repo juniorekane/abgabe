@@ -2,7 +2,7 @@
 
 %Hier später bei Fortschritt irgendwas hinzufügen
 
-Bei dieser Ausarbeitung haben wir sehr viel Wert darauf gelegt, eine fundierte Analyse anhand unsere Gelernten aus der Vorlesung abzugeben. AUs diesem Grund haben wir nicht nur irgendeinen Code aus der Vorlesung kopiert und eingefügt, sondern, wir haben das Wissen aus der Vorlesung zu unserem Nutzen gemacht und daraus erfolgten verschiedene Analysen mit einem und zwei und noch mehr Containern, damit wir effektiv zeigen können, wie eine Dockerumgebung verwendet werden kann.
+Bei dieser Ausarbeitung haben wir sehr viel Wert darauf gelegt, eine fundierte Analyse anhand unsere Gelernten aus der Vorlesung abzugeben. Aus diesem Grund haben wir nicht nur irgendeinen Code aus der Vorlesung kopiert und eingefügt, sondern, wir haben das Wissen aus der Vorlesung zu unserem Nutzen gemacht und daraus erfolgten verschiedene Analysen mit einem und zwei und noch mehr Containern, damit wir effektiv zeigen können, wie eine Dockerumgebung verwendet werden kann.
 
 \subsection{Analyse mit zwei laufenden Containern}
 
@@ -21,7 +21,46 @@ Der Grund, warum wir nicht mit einem Container gearbeitet haben ist leicht zu er
 
 \subsubsection{Aufbau der Image: \texttt{fancy}}
 
+In einer Dockerumgebung laufen die Container auf einer sogenannten Image, die vorabgebaut werden muss. Was eine Image ist, wird hier nicht mehr erläutert, hierfür steht die Beschreibung oben als Referenz. Unsere Image haben wir wie seit dem ersten Semester gelernt automatisert aufgebaut in einem shell-Skript names \texttt{/build.sh}. Unser Sckript sieht dann folgendermaßen aus:
+
+\defverbatim\CodeOne{
+  \begin{minted}{bash}
+    #!/usr/bin/env bash
+    . local/config.txt
+    bin/download-tomcat.sh
+    bin/download-libs.sh
+    docker image build --progress=plain -t image-fancy context
+  \end{minted}
+  \captionof{Listing}{build.sh}
+}
 \subsubsection{Aufbau unseres lokalen Netzwerkes: \textt{mynet}}
+
+Das Arbeiten mit verteilten Container erfordert einen regelmäßigen Austausch zwischen denen, da der einer Container einen Dienst brauchen könnte, der nur auf dem anderen verfügbar sein kann. Daher ist die Verwendung einer benutzerdefinierten Netzwerkumgebung innerhalb von Docker  durchaus notwendig, um eine isolierte Netzwerkumgebung für unsere Docker-COntainer zu schaffen. Dies haben wir uns auch in dieser Ausarbeitung erarbeitet. Hierfür haben wir ein bash-Skript namens \texttt{create-mynett-network.sh} erstellt. In diesem bash-Skript ist nur eine einzige Befehlzeile vorhanden:
+
+\defverbatim\CodeOne{
+  \begin{minted}{bash}
+    #!/bin/bash
+    docker network create mynet --subnet 172.27.0.0/16
+
+  \end{minted}
+\captionof{Listing}{create-mynet-network.sh}
+}
+
+Mit diesem Befelhzeile wird ein neues Netwerk erstellt, dessen Name \texttt{mynet} ist. Dazu fügen wird eine optionale Konfiguration hinzugefügt mit \texttt{--subnet 172.27.0.0/16}. Diese definiert das Subnetz des Netzwerkes. In diesem Fall legt die definierte IP-Adresse das Subnetz fest, das alle IP-Adressen von 172.27.0.1 bis 172.27.255.254 umfasst und mit \texttt{/16} als Subnetzmaske angibt, die bestimmt welcher Teil der IP-Adresse das Netzwerk und welcher Teil die spezifischen Hots innerhalb dieses Netzwerks darstellt.
+
+\\
+
+abgesehen vom Vorteil der Isolation, von dem wir mehjr genug in dieser Ausarbeitung geschrieben haben, bietet das Erstellen eines lokalen Netzes für verteilte Docker-Container erheblich viele Vorteile an. Hier kann die benutzerdefinierte IP-Adressierung angesprochhen werden, wodurch die Konfiguration von Diensten und die Kommunikation zwischen Containern  erleichtert wird, da wir schon wissen, in welchem IP-Bereich sich die Container befinden.
+
+\\
+
+Erwähnen können wir noch die vereinfachte Dienstentdeckung, die von Docker-Container unterstützt werden, was bedeutet, dass Container sich gegenseitig über den Container-Namen ( der als Hostname fungiert) finden und kommunizieren können. Dadurch wird die Konfiguration von Anwendungen, die über mehrere Conatiner verteilt sind, erheblich vereinfacht.
+
+\\
+\\
+
+Ein letzter Vorteil liegt bei der Performance bzw. Leistungsfähigkeit. Wenn wir unseren Netzwerkverkehr in einem isolierten Netzwerks halten, können wir potenziell die Netzwerkperformance verbessern, da der Verkehr nicht durch den Haupt-Docker-Daemon geleitet wrden muss. Es geschieht alles lokal und es muss nichts geladen werden.
+
 
 \subsubsection{Aufbau der Container: \texttt{work und service}}
 
@@ -46,7 +85,7 @@ Wir beginnen erstmal mit \texttt{work}. In diesem Container wurde hauptsächlich
 }
 
 Zum Starten vom Container selbst wird ein anderes Skript names \texttt{start-work.sh} verwendet. Dieses Skript sorgt einfach dafür, dass der work-Container gestartet wird, aber mit zusätzlichen Optionen, wie zum Beispiel, dass es in einem lokal erstellten Netzwerk läuft, vorbereitetete Konfigurationen übernimmt, die sich schon vorab in dem Verzeichnis Startup in \texttt{context/} befinden, und auch zu vorhandenen bekannten Hots hinzugefügt wird. Dadurch wird es möglich sich in diesem Container per ssh zu bewegen, statt auf der Kommandozeile \begin{verbatim} docker container exec -ti work bash \end{verbatim} eingeben zu müssen. Zu den wichtigsten Sachen die work beim Starten kopiert werden, zählen wir, Java-Programme, die Teil unseres Servelt sind.
-\defverbatim\codeOne{
+\defverbatim\CodeOne{
   \begin{minted}
     ssh $containername :
     scp -qr javawebdemo $containername:
@@ -59,17 +98,60 @@ Da Work nur der Arbeitsbereich ist und dort nur gecode wird, ist das tatsächlic
 
 \\
 
+\subsubsection{Lasttest mit zwei Containern}
+
+Nach dem unser Servlet bereitgestellt und in den entsprechenden Containern deployt wurde. haben wir zur Vervollständigung der Analyse mit einer testphase angefangen. Hierbei wollten, wir das Verhalten unserer Dockerumgebung bei hoher anfrageaufkommen analysieren und Erkenntnisse daraus ziehen.
+
+\\
+
+Zum Durchführen von Lasttest wird eine geeignete Anwendung benötigt, die die Aufgabe erfüllen kann, vermehrte Anfragen an eine gleiche Adresse zu schicken, damit wir die Leistung von unserem System unter unterschiedlichen Arbeitslasten zu prüfen. Dies würde uns dann die Möglichkeit geben, herauszufinden, wo die Schwächen und Grenzen in unserem System liegen. So ein test inst nicht nur im Rahmen dieser Veranstaltung wichtig, sondern wir werden es auch kpnftig als Softwareentwickler oder -tester im Arbeitsumfeld brauchen. heutzutage gilt in der Geschäftswelt - Zeit ist geld - besonders noch in der IT-Welt als in der realen Welt. Deshalb ist es wichtig zu gewährleisten, dass Systeme unabhängig von fauer und Nutzungslast problemlos arbeiten können. Das haben wir uns in dieser ersten Ananlyse auch gewidmet.
+
+\\
+
+Das Werkzeug, dass wir nach Überlegungen und vergleich ausgwählt haben, ist \textbf{Grafana k6}. Es ist ein Open-Source-Tool für Lasttest, .it dem Leistungstets für Engineering-teams einfach und produktiv sind. als Open-Source-Tool ist es auch natürlich kostenfrei. K6 haben wir zwischen all den anderen Tools wie:
+
+\begin{itemize}
+    \item curl
+    \item wrk
+    \item ab
+\end{itemize}
+
+weil es einfacher ist zu bedienen (zwar nicht leichter als curl, aber leistungsfähiger)  und kann eine viel höhere Last setzen.
+Jeder test bietet mti k6 eine Visualisierung der testmetriken. Zudem können die Ergebnisse davon in andere Dashboards übertargen werden, um tiefergehende Analyse zu ermöglichen. K6 wird mit JavaScript implemtiert, um Anfragen über HTTP-Methoden zu senden. Es wird hierfür eien JavaScript-Datei (bei uns \texttt{script.js}) erstellt. Unsere sieht folgendermaßen aus:
+\defverbatim\codeOne{
+  \begin{minted}{JavaScript}
+    import http from 'k6/http';
+    export const options = {
+      noCookiesReset: true,
+    }
+
+    export default function () {
+      let jar = http.cookieJar();
+      const res = http.get('http://192.168.0.177:8080/sql');
+    }
+  \end{minted}
+\captionof{Listing}{script.js}
+
+
+
+
 \subsubsection{Hoffnung und Erwartungen}
 
 
-Im Laufe des Semesters konnte wir durch unsere Teilnahme an den Veranstaltungen sehr viele Ideen zum Testen haben. Das haben wir versucht in diesem projekt wiederzuspiegeln. Darauf haben wir stets abgezielt, die beigebrachten Konzepten anzuwenden. Wir wollten zum Beispiel Networking anwenden, was ein Zusammenschluss von zwei oder mehr Computern oder anderen, elektronischen Geräten, der den Austausch von Daten und die Nutzung gemeinsamer Ressourcen ermöglicht \cite{ionos}. Wenn bei uns jeder Container einzeln als Computer betrachtet wird, können wir auch von Networking reden. In einem Netz hat jeder Computer eine eigene IP-Adresse, mit der er über das Netz angesprochen werden kann. Dies haben wir uns bei der testphase zur Nutze gemacht, um wiederholt Anfragen an unseren Programmen zu senden.
+Im Laufe des Semesters konnten wir durch unsere Teilnahme an den Veranstaltungen sehr viele Ideen zum Testen haben. Das haben wir versucht in diesem projekt wiederzuspiegeln. Darauf haben wir stets abgezielt, die beigebrachten Konzepten anzuwenden. Wir wollten zum Beispiel Networking anwenden, was ein Zusammenschluss von zwei oder mehr Computern oder anderen, elektronischen Geräten, der den Austausch von Daten und die Nutzung gemeinsamer Ressourcen ermöglicht \cite{ionos}. Wenn bei uns jeder Container einzeln als Computer betrachtet wird, können wir auch von Networking reden. In einem Netz hat jeder Computer eine eigene IP-Adresse, mit der er über das Netz angesprochen werden kann. Dies haben wir uns bei der testphase zur Nutze gemacht, um wiederholt Anfragen an unseren Programmen zu senden.
+
+\\
+\\
+
+Bei dem Thema IP-Adresse spricht man von Adressierung. Eine Sache, mit der wir uns auch im Semester beschäftigt haben und durch die vielen geteilten Videos gelernt haben. Dabei wurde immer hauptsächlich von dem TCP/IP (aus dem Englischen: Transmission Control Protocol/ Internet Protocol) gesprochen, dessen Grundlagen wir in unserem Projekt haben. Es ist ein Konzept, das die Identifizierung von en einem Netzwerk teilnehmenden Rechnern über IP-Adresse ermöglicht. Die Funktionsweise basiert zum Beispiel im OSI-Model auf 3- bis 4-Schichten-Protokolle. Die Kommunikation erfolgt wie in den letzten Veranstaltungen gezeigt in Form von Datenpakette, die gesendet und auch auf der anderen Seite empfängt werden. Es bestht zur Gewährleistung der Sicherheit eine Art Codierung in der Kommunikation zwischen den zwei austauschenden Geräten, sodass der einer eine bestimmte Anzahl an Byte sendet und der Empfänger als Antwort auch eine entsprechende Anzahl an Byte mit dem korrekten Anfang und die korrekte Folge zurücksendet, damit der Absender erstmal weiß, dass der Empfänger die anchricht bzw. das Datenpakett empfangen hat und davon die Antwort schon vorhanden ist. Dieses Prinzip ist auch bei uns vorhanden uns wird in einer späteren Analyse gezeigt.
+
+\\
+\\
+
+Noch wärhend der Veranstaltung wurden wir in die POSIX-Standard eingeführt. Was wir dazu wissen ist, POSIX heißt (aus dem Englischen) Portable Operating System Interface und ist eine gemeinsam von IEEE und der Open Group für Unix entwickelte standardisierte Programmierschnittstelle, welche die Schnittstelle zwischen Anwendungssoftware und Betriebssystem darstellt. Es ist zu einer Norm geworden, die bei allen Unic-Betriebssystemen verwendet wird. Dabei ist ein betriebssystem wie Windows ausgeschlossen, denn dieses System hat seine eigene Standart. Früher hat jedoch Microsoft versucht, sich an diese Standards zu halten, sind aber später davon rausgegangen. Wir haben uns diese Standards eingeprägt und auch in unserer Implementierung mit einbezogen.
 
 \\
 
-
-Noch wärhend der Veranstaltung wurden wir in die POSIX-Standard eingeführt. Was wir dazu wissen ist, POSIX heißt (aus dem Englischen) Portable Operating System Interface und ist eine gmeinesam von IEEE und der Open Group für Unix entwickelte standardisierte Programmierschnittstelle, welche die Schnittstelle zwischen Anwendungssoftware und Betriebssystem darstellt. Es ist zu einer Norm geworden, die bei allen Unic-Betriebssystemen verwendet wird. Dabei ist ein betriebssystem wie Windows ausgeschlossen, denn dieses System hat seine eigene Standart. Früher hat jedoch Microsoft versucht, sich an diese Standards zu halten, sind aber später davon rausgegangen.
-
-\\
 
 
 
