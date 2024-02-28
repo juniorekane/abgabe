@@ -158,3 +158,34 @@ Noch wärhend der Veranstaltung wurden wir in die POSIX-Standard eingeführt. Wa
 \subsection{Analyse mit drei laufenden Containern}
 
 \subsection{Analyse mit vier laufenden Containern}
+Die vorliegende Analyse untersucht die Bedingungen und den Zustand von vier laufenden Containern. Zunächst wurden zwei Container analysiert, gefolgt von einer erweiterten Analyse mit
+vier Containern. Diese erweiterte Analyse wird dazu beitragen, ein umfassenderes Verständnis der Variabilität zwischen den Containern zu gewinnen .
+
+Für die Analyse wurden die Container weiter mithilfe von k6 gemacht, was schon oben beschrieben wurde. Die Container wurden auf einem Testsystem mit ausreichender Ressourcenkapazität
+bereitgestellt. Der Test umfasste verschiedene Szenarien, um die Leistung unter unterschiedlichen Lastbedingungen zu bewerten.
+Durch Hinzufügen weiterer Container wurde die Testumgebung erweitert, um eine realistischere Simulation der Produktionsumgebung zu ermöglichen. Dies erlaubt eine bessere Bewertung der
+ Leistung und Skalierbarkeit des Systems unter realen Bedingungen.
+
+Wie oben hatten wir schon von den containers services und work beschrieben daneben haben wir auch container mit den namen , services_mariadb, services_tomcat , services_redis , aufgebaut.
+
+\\
+
+In unserer Ausarbeitung haben wir für jeden Container zwei Skripte entwickelt, von denen jedes eine wichtige Funktion erfüllt. Für den MariaDB-Container haben wir das Skript \texttt{
+myinit-services-mariadb.sh} erstellt, das eine zentrale Rolle im Erstellungs- und Konfigurationsprozess des MariaDB-Containers spielt. Dieses Skript hat den Zweck, den MariaDB-Dienst
+innerhalb des Containers zu initialisieren und zu starten. Es übernimmt dabei entscheidende Aufgaben wie die Konfiguration der Datenbank, um sicherzustellen, dass sie ohne probleme  funktioniert und bereit ist, Anfragen zu bearbeiten.
+
+Das zweite Skript, \texttt{start-mariadb.sh}, ist verantwortlich für den Start des Containers. Es automatisiert den gesamten Prozess der Erstellung und Konfiguration des MariaDB-Conta
+iners. Dabei werden verschiedene Parameter festgelegt, darunter der Containername (Services-mariadb), das Netzwerk und die zu verwendenden Ports. Zusätzlich wird ein spezifisches Docker-Image (image-fancy) für die Erstellung des Containers verwendet.
+Diese Skripte ermöglichen eine effiziente und zuverlässige Bereitstellung des MariaDB-Dienstes in einem Containerumfeld. Sie automatisieren komplexe Abläufe und stellen sicher, dass der Container mit den richtigen Einstellungen gestartet wird, um eine reibungslose Funktion der Datenbank zu gewährleisten. Durch die klare Trennung der Funktionen in einzelne Skripte
+wird die Wartbarkeit und Lesbarkeit des Codes verbessert und eine effektive Verwaltung des Containers erleichtert.
+
+\\
+
+wie für mariadb haben wir ein container Services-tomcat aufgebaut , die auch aus zwei Skripten besteht und zwar \textt{my-init-services-tomcat.sh} und \texttt{start-tomcat.sh} . Was der Erste Skript \textt{my-init-services-tomcat.sh} angeht , ist es wieder ein Schlüsselelement im Prozess der Erstellung und Konfiguration eines Tomcat-Containers. Es initialisiert un
+d startet den Tomcat innerhalb des Containers. Dies umfasst typischerweise die Konfiguration der Tomcat-Instanz, einschließlich Benutzer- und Berechtigungsverwaltung sowie das Starten
+ von Diensten wie SSH. Das Skript ist für die automatisierte Einrichtung und Konfiguration des Tomcat-Containers verantwortlich und stellt sicher, dass dieser gemäß den Anforderungen
+korrekt gestartet wird.
+Bei der anderen Skript \texttt{start-tomcat.sh} , ist für das Starten des Tomcat-Containers zuständig. Es erstellt und konfiguriert den Container mit spezifischen Parametern wie Netzw
+erk, Volumes und Portweiterleitungen. Nach der Erstellung des Containers kopiert das Skript Startdateien und Konfigurationen in den Container, um sicherzustellen, dass dieser ordnungs
+gemäß gestartet wird. Anschließend startet das Skript den Container und überwacht seinen Status, um sicherzustellen, dass er vollständig betriebsbereit ist. Im Falle eines Fehlers bei
+ der Containererstellung oder beim Start wird eine entsprechende Fehlermeldung ausgegeben, um Probleme zu identifizieren und zu beheben.
