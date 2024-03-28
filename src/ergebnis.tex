@@ -19,9 +19,9 @@ Der Ordner, den wir hierfür  ausgewählt haben, war \begin{verbatim} /docker-fa
 
 Der Grund, warum wir nicht mit einem Container gearbeitet haben ist leicht zu erklären. Es liegt einfach daran, dass wir vom Vorteil solch einer Umgebung Gebrauch machen wollten, und zwar die Isolation. Die Prozesse auf eine einem Docker finden nämlich isoliert statt, was zu verbesserten Leistungen führt. Noch wichtig zu der Isolation wäre die erhöhte Flexibilität. Nehmen wir als Beispiel einen Fall, den wir bei uns hatten mit einem nicht aktuellen Container hatten. In so einer Situation ließ sich dieser mit wenig Aufwand durch einen aktuellen Container, der unserer Anforderungen entsprach, tauschen.\\
 
-\subsubsection{Aufbau der Image: \texttt{fancy}}
+\subsubsection{Aufbau des Images: \texttt{fancy}}
 
-In einer Dockerumgebung laufen die Container auf einer sogenannten Image, die vorabgebaut werden muss. Was eine Image ist, wird hier nicht mehr erläutert, hierfür steht die Beschreibung oben als Referenz. Unsere Image haben wir wie seit dem ersten Semester gelernt automatisert aufgebaut in einem shell-Skript names \texttt{/build.sh}. Unser Sckript sieht dann folgendermaßen aus:
+In einer Dockerumgebung laufen die Container auf einem sogenannten Docker Image, das vorabgebaut werden muss. Was ein Image ist, wird hier nicht mehr erläutert, hierfür steht die Beschreibung oben als Referenz. Unser Image haben wir wie seit dem ersten Semester gelernt automatisert aufgebaut in einem shell-Skript names \texttt{/build.sh}. Unser Skript sieht dann folgendermaßen aus:
 
 \defverbatim\CodeOne{
   \begin{minted}{bash}
