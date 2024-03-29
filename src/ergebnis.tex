@@ -157,6 +157,26 @@ Noch wärhend der Veranstaltung wurden wir in die POSIX-Standard eingeführt. Wa
 
 \subsection{Analyse mit drei laufenden Containern}
 
+Die Weiterentwicklung unserer \texttt{Docker}-basierten Anwendungsumgebung durch die Einbindung eines dritten Containers hat unsere Analysefähigkeit hinsichtlich der Architektur, Skalierbarkeit, Netzwerkdynamik und der Leistungsoptimierung maßgeblich vertieft. Diese strategische Erweiterung mit dem \texttt{tomcat}-Container, zusätzlich zu den bereits implementierten \texttt{work}- und \texttt{mariadb}-Containern, ermöglichte es uns, die Interaktionen innerhalb des Systems eingehender zu untersuchen, potenzielle Leistungsbegrenzungen zu identifizieren und Ansätze für Optimierungen zu erkunden.
+
+
+Die Integration des \texttt{tomcat}-Containers vervollständigt eine triadische Architektur, in der \texttt{tomcat} als Web- und Applikationsserver agiert, \texttt{mariadb} die Datenpersistenz sicherstellt und \texttt{work} als zentrale Entwicklungs- und Testumgebung dient. Diese klare Aufteilung und Isolation einzelner Dienste maximiert nicht nur die Sicherheit und Effizienz innerhalb der Umgebung, sondern fördert auch eine gezielte Skalierung und Wartung der einzelnen Komponenten.
+
+Durch spezifisch angepasste Konfigurationen und Volumenbindungen für jeden Container haben wir eine hochgradig interoperable Umgebung geschaffen, die eine optimale Leistung gewährleistet. Insbesondere die Einrichtung des \texttt{tomcat}-Containers, mit der Fähigkeit, Anfragen über den Standard-HTTP-Port 8080 zu empfangen, unterstreicht die strategische Bedeutung der Portweiterleitung für die Zugänglichkeit und Funktionalität des Systems. Die Automatisierung dieses Prozesses durch präzise konfigurierte Bash-Skripte sichert eine fehlerfreie und reproduzierbare Containerbereitstellung, ein Schlüsselelement in effizienten DevOps-Workflows.
+
+
+Die umfassende Leistungsüberprüfung mittels Lasttests, realisiert durch das \texttt{Grafana k6} Tool, offenbarte signifikante Einsichten in die Systemleistung unter variierenden Lastbedingungen. Fokussiert auf kritische Metriken wie Antwortzeiten, Durchsatz und Ressourcennutzung, illustrierten die Testergebnisse eindrucksvoll die Adaptivität und Skalierbarkeit unserer containerisierten Anwendungsarchitektur. Besonders die flexible Ressourcenzuweisung und -kontrolle erwies sich als essentiell für die effiziente Bewältigung von Lastspitzen, ein Indiz für die fortgeschrittene Reife unserer Systemkonfiguration.
+
+Diese detaillierte Leistungsanalyse, ergänzt durch simulierte Benutzeranfragen an den \texttt{Tomcat}-Server, ermöglichte nicht nur die Bewertung der dreiteiligen Containerkonstellation, sondern lieferte auch präzise Daten zur Unterstützung zukünftiger Optimierungsmaßnahmen. Die erhobenen Leistungsdaten bildeten die Basis für eine tiefgreifende Analyse der Anwendung unter Stressbedingungen, was wiederum wertvolle Erkenntnisse für die Weiterentwicklung der Architektur lieferte.
+
+
+
+Die Komplexität der Netzwerkkonfiguration und das effektive Management der Kommunikation zwischen den Containern präsentierten sich als herausfordernde Aspekte, die innovative Lösungsansätze erforderten. Durch die Feinjustierung der Netzwerkeinstellungen und die Implementierung sicherer Kommunikationskanäle zwischen \texttt{tomcat} und \texttt{mariadb} konnten wir die Systemintegrität und Leistung signifikant steigern. Zudem hat die detaillierte Anpassung der Containerkonfigurationen, insbesondere in Bezug auf Ressourcenzuweisungen und Beschränkungen, maßgeblich zur Stabilisierung der Leistung unter hohen Lastbedingungen beigetragen.
+
+
+Die Erweiterung unserer \texttt{Docker}-basierten Infrastruktur um einen dritten Container hat nicht nur unsere analytischen Fähigkeiten erweitert, sondern auch tiefere Einblicke in die Chancen und Herausforderungen der Containerisierung ermöglicht. Diese Analyse liefert eine solide Grundlage für die kontinuierliche Optimierung unserer Architektur und unterstreicht die Bedeutung einer methodischen Herangehensweise an das Design und Management moderner Anwendungsumgebungen. Zukünftige Entwicklungsstrategien könnten die Exploration fortschrittlicher Orchestrierungstechnologien wie \texttt{Kubernetes}, die Integration zusätzlicher Microservices und die Implementierung fortschrittlicher Lastausgleichslösungen umfassen, um die Robustheit, Skalierbarkeit und Effizienz unserer Anwendungsarchitektur weiter zu steigern.
+
+
 \subsection{Analyse mit vier laufenden Containern}
 Die vorliegende Analyse untersucht die Bedingungen und den Zustand von vier laufenden Containern. Zunächst wurden zwei Container analysiert, gefolgt von einer erweiterten Analyse mit
 vier Containern. Diese erweiterte Analyse wird dazu beitragen, ein umfassenderes Verständnis der Variabilität zwischen den Containern zu gewinnen .

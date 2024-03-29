@@ -1,0 +1,3 @@
+tomcatserver=https://informatik.hs-bremerhaven.de
+manager=docker-oradfelder-manager
+webapp=docker-oradfelder-java

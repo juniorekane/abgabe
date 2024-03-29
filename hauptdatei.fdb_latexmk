@@ -1,0 +1,22 @@
+# Fdb version 4
+["lualatex"] 1708544925 "hauptdatei.tex" "hauptdatei.pdf" "hauptdatei" 1708544966 2
+  "/usr/share/texlive/texmf-dist/tex/latex/base/ltluatex.lua" 1667332637 24386 83c652de0f414f3e99ca4bc3359bc2f2 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.lua" 1673989714 16940 14e757e1be9764a86135ad5b4b883d66 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua" 1308175312 1031 977f79ff10b802fc398926378bec58e9 ""
+  "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1699129425 11886686 7d5ba4724cbc2a3afa686b476308df3d ""
+  "caption.sty" 0 -1 0 ""
+  "dirtree.sty" 0 -1 0 ""
+  "float.sty" 0 -1 0 ""
+  "fontspec.sty" 0 -1 0 ""
+  "hauptdatei.aux" 1708544925 32 3985256e7290058c681f74d7a3565a19 "lualatex"
+  "hauptdatei.tex" 1708348366 9987 5711b2449ee2aedb72ec17571bbbb437 ""
+  "microtype.sty" 0 -1 0 ""
+  "pdflscape.sty" 0 -1 0 ""
+  "placeins.sty" 0 -1 0 ""
+  "scrartcl.cls" 0 -1 0 ""
+  "subcaption.sty" 0 -1 0 ""
+  (generated)
+  "hauptdatei.aux"
+  "hauptdatei.log"
+  "hauptdatei.pdf"
+  (rewritten before read)
